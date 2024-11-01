@@ -1,0 +1,119 @@
+{
+    "apiVersion": "1",
+    "name": "bpwpsb/product-swiper",
+    "title": "Swipe n buy",
+    "description": "A WooCommerce block plugin to make the purchase process easy and fast",
+    "category": "widgets",
+    "keywords": [
+        "slider",
+        "swipe",
+        "product"
+    ],
+    "textdomain": "swipe-n-buy",
+    "attributes": {
+        "layout": {
+            "type": "object",
+            "default": {
+                "desktop": "swipe",
+                "tablet": "swipe",
+                "mobile": "swipe"
+            }
+        },
+        "align": {
+            "type": "string",
+            "default": ""
+        },
+        "layoutAlign": {
+            "type": "string",
+            "default": "left"
+        },
+        "width": {
+            "type": "number",
+            "default": 100
+        },
+        "cId": {
+            "type": "string",
+            "default": ""
+        },
+        "categories": {
+            "type": "array",
+            "default": []
+        },
+        "limit": {
+            "type": "number",
+            "default": -1
+        },
+        "order_by": {
+            "type": "string",
+            "default": "menu_order"
+        },
+        "order": {
+            "type": "string",
+            "default": ""
+        },
+        "btnSize": {
+            "type": "object",
+            "default": {
+                "desktop": 60,
+                "tablet": 50,
+                "mobile": 40
+            }
+        },
+        "btnBorder": {
+            "type": "object",
+            "default": {
+                "width": "1px",
+                "style": "solid",
+                "color": "#000",
+                "side": "all",
+                "radius": "50%"
+            }
+        },
+        "btnColor": {
+            "type": "string",
+            "default": "#000"
+        },
+        "btnActiveColor": {
+            "type": "string",
+            "default": "#000"
+        },
+        "btnBgColor": {
+            "type": "string",
+            "default": "#fff"
+        },
+        "columns": {
+            "type": "object",
+            "default": {
+                "desktop": 3,
+                "tablet": 2,
+                "mobile": 1
+            }
+        },
+        "columnGap": {
+            "type": "string",
+            "default": "30px"
+        },
+        "rowGap": {
+            "type": "string",
+            "default": "40px"
+        }
+    },
+    "supports": {
+        "align": [
+            "wide",
+            "full"
+        ],
+        "html": false
+    },
+    "example": {
+        "attributes": {
+            "preview": true,
+            "columns": {
+                "desktop": 1,
+                "tablet": 1,
+                "mobile": 1
+            }
+        }
+    },
+    "editorScript": "file:dist/editor.js"
+}
